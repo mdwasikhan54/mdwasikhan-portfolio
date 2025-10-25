@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/Image/logo.png">
+    <title>MD Wasi Khan - Blogs</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="home.html">
+                    <img src="/Image/logo.png" alt="Demo Portfolio Logo" style="height: 40px; width: auto; vertical-align: middle;">
+                </a>
+            </div>
+            <div class="nav-right">
+                <div class="nav-menu" id="nav-menu">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
+                </div>
+                <a href="#" id="theme-toggle" class="theme-toggle-link" aria-label="Toggle theme"><i class="fas fa-moon"></i></a>
+                <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="blogs">
+        <div class="header">
+            <h1>My Technical Blogs</h1>
+            <p>Here you will find my thoughts, tutorials, and deep dives into the world of Full Stack Development.</p>
+        </div>
+
+        <div class="blogs-grid">
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="/Image/blog1.jpeg" alt="Blog Post 1 Image">
+                </div>
+                <div class="blog-info">
+                    <h2 class="blog-title">How Powerful Is Your PC?</h2>
+                    <p class="blog-desc">Many professionals experience slow systems, laggy performance, or unresponsive applications — but the root cause often remains unclear.
+                    Is the processor too weak? Is the RAM bottlenecking performance? Or is it time for a hardware upgrade?</p>
+                    <a href="https://docs.google.com/document/d/1RN9U966PODLWSQfq7BPiXqP4rLBhWVmWMrRSGSoQmgE/edit?usp=sharing" target="_blank" class="btn primary-btn read-more-btn">Read Full Blog <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="/Image/blog2.jpeg" alt="Blog Post 2 Image">
+                </div>
+                <div class="blog-info">
+                    <h2 class="blog-title">Poetry in Python</h2>
+                    <p class="blog-desc">এই ব্লগে Poetry এর বিভিন্ন দিক বিস্তারিতভাবে আলোচনা করা হয়েছে: এটি কী, কেন এবং কখন ব্যবহার করা উচিত, এবং এর ব্যবহারিক প্রয়োগের ধাপগুলো। এই গাইড পড়ে পাঠকরা Poetry এর সুবিধা ও কার্যকারিতা সম্পর্কে গভীরভাবে ধারণা অর্জন করতে পারবেন এবং তাদের প্রজেক্টগুলোকে আরও দক্ষতার সাথে পরিচালনা করতে সক্ষম হবেন।</p>
+                    <a href="https://docs.google.com/document/d/1z48hmRhUMNA_mXKni-M506b6s2rMSHc8C32yq7_-FfI/edit?usp=sharing" target="_blank" class="btn primary-btn read-more-btn">Read Full Blog <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="/Image/blog3.jpeg" alt="Blog Post 3 Image">
+                </div>
+                <div class="blog-info">
+                    <h2 class="blog-title">Are Your Messages Truly Safe?</h2>
+                    <p class="blog-desc">🛡️ WhatsApp is Encrypted — But Are Your Messages Truly Safe?
+ —Pegasus, the CIA, and your smartphone’s real vulnerability! We trust WhatsApp because it promises end-to-end encryption. But if your device is compromised, encryption alone won’t save you.</p>
+                    <a href="https://docs.google.com/document/d/1BFvFjxRfButBgYXoAUHhaCMJB20MZyLnaQsxbp-IkZI/edit?usp=sharing" target="_blank" class="btn primary-btn read-more-btn">Read Full Blog <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 MD WASI KHAN Portfolio. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const menuToggleBtn = document.getElementById('menu-toggle-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    if (menuToggleBtn && navMenu) {
+        menuToggleBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuToggleBtn.classList.toggle('active');
+        });
+    }
+
+    const closeMenu = () => {
+        navMenu.classList.remove('active');
+        menuToggleBtn.classList.remove('active');
+    };
+    document.querySelectorAll('.nav-menu ul li a').forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+    const toggleIcon = themeToggleBtn.querySelector('i');
+
+    const lightThemeClass = 'light-mode';
+    const lightIcon = 'fa-sun';
+    const darkIcon = 'fa-moon';
+    const themeKey = 'theme';
+
+    function applyTheme(theme) {
+        if (theme === 'light') {
+            body.classList.add(lightThemeClass);
+            toggleIcon.classList.remove(darkIcon);
+            toggleIcon.classList.add(lightIcon);
+            localStorage.setItem(themeKey, 'light');
+        } else {
+            body.classList.remove(lightThemeClass);
+            toggleIcon.classList.remove(lightIcon);
+            toggleIcon.classList.add(darkIcon);
+            localStorage.setItem(themeKey, 'dark');
+        }
+    }
+
+    function toggleTheme() {
+        if (body.classList.contains(lightThemeClass)) {
+            applyTheme('dark');
+        } else {
+            applyTheme('light');
+        }
+    }
+
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            toggleTheme();
+        });
+    }
+
+    const storedTheme = localStorage.getItem(themeKey);
+    applyTheme(storedTheme === 'light' ? 'light' : 'dark');
+});
+    </script>
+</body>
+</html>

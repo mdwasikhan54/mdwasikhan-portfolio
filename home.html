@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/Image/logo.png">
+    <title>MD Wasi Khan - Home</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="home.html">
+                    <img src="/Image/logo.png" alt="Demo Portfolio Logo" style="height: 40px; width: auto; vertical-align: middle;">
+                </a>
+            </div>
+            
+            <div class="nav-right">
+                <div class="nav-menu" id="nav-menu">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
+                </div>
+                <a href="#" id="theme-toggle" class="theme-toggle-link" aria-label="Toggle theme"><i class="fas fa-moon"></i></a>
+                <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="left">
+            <div class="content">
+                <h2>Hello, I'm</h2>
+                <h1>MD WASI KHAN</h1>
+                <p class="subtitle">Full Stack Developer & Designer</p>
+                <p>I'm a backend-focused developer passionate about building scalable, efficient, and user-centered web solutions. I work with Python and frameworks like FastAPI to create clean, maintainable, and robust systems. Every challenge is an opportunity to learn and grow.</p>
+                <a href="contact.html" class="btn primary-btn">Contact Me</a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="image">
+                <img src="/Image/profile.jpg" alt="MD WASI KHAN Profile">
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 MD WASI KHAN Portfolio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const menuToggleBtn = document.getElementById('menu-toggle-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    if (menuToggleBtn && navMenu) {
+        menuToggleBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuToggleBtn.classList.toggle('active');
+        });
+    }
+
+    const closeMenu = () => {
+        navMenu.classList.remove('active');
+        menuToggleBtn.classList.remove('active');
+    };
+    document.querySelectorAll('.nav-menu ul li a').forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+    const toggleIcon = themeToggleBtn.querySelector('i');
+
+    const lightThemeClass = 'light-mode';
+    const lightIcon = 'fa-sun';
+    const darkIcon = 'fa-moon';
+    const themeKey = 'theme';
+
+    function applyTheme(theme) {
+        if (theme === 'light') {
+            body.classList.add(lightThemeClass);
+            toggleIcon.classList.remove(darkIcon);
+            toggleIcon.classList.add(lightIcon);
+            localStorage.setItem(themeKey, 'light');
+        } else {
+            body.classList.remove(lightThemeClass);
+            toggleIcon.classList.remove(lightIcon);
+            toggleIcon.classList.add(darkIcon);
+            localStorage.setItem(themeKey, 'dark');
+        }
+    }
+
+    function toggleTheme() {
+        if (body.classList.contains(lightThemeClass)) {
+            applyTheme('dark');
+        } else {
+            applyTheme('light');
+        }
+    }
+
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            toggleTheme();
+        });
+    }
+
+    const storedTheme = localStorage.getItem(themeKey);
+    applyTheme(storedTheme === 'light' ? 'light' : 'dark');
+});
+    </script>
+</body>
+</html>

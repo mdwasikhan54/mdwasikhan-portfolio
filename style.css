@@ -843,7 +843,7 @@ footer p {
         height: 350px;
     }
 
-    .contact-container {
+    .contact-grid-wrapper {
         grid-template-columns: 1fr;
     }
 }

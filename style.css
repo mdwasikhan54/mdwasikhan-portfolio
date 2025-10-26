@@ -854,7 +854,7 @@ footer p {
     }
 }
 
-@media (max-width: 768px) and (min-width: 320px) {
+@media (min-width: 320px) {
     body {
         font-size: 16px;
     }

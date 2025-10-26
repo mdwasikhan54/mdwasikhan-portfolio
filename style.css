@@ -626,11 +626,11 @@ nav {
 
 /* --- Contact Section (contact.html) --- */
 
-#contact{
+/* #contact{
     max-width: 100%;
     min-width: 320px;
     margin: 0 auto;
-}
+} */
 
 /* Main Grid */
 .contact-grid-wrapper {
@@ -817,7 +817,7 @@ footer p {
 }
 
 /* --- Responsiveness --- */
-@media (max-width: 1024px) {
+@media (max-width: 1024px ) and (min-width: 769px) {
     section {
         padding: 80px 8%;
         max-width: 1400px;
@@ -854,7 +854,7 @@ footer p {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 320px) {
     body {
         font-size: 16px;
     }

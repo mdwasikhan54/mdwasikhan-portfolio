@@ -74,9 +74,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    max-width: 100%;
-    min-width: 320px;
-    margin: 0 auto;
     overflow-x: hidden;
 }
 
@@ -628,6 +625,12 @@ nav {
 }
 
 /* --- Contact Section (contact.html) --- */
+
+#contact{
+    max-width: 100%;
+    min-width: 320px;
+    margin: 0 auto;
+}
 
 /* Main Grid */
 .contact-grid-wrapper {

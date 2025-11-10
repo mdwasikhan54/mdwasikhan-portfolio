@@ -43,7 +43,7 @@
                 <h2>Hello, I'm</h2>
                 <h1>MD WASI KHAN</h1>
                 <p class="subtitle">Full Stack Developer & Designer</p>
-                <p>I'm a backend-focused developer passionate about building scalable, efficient, and user-centered web solutions. I work with Python and frameworks like FastAPI to create clean, maintainable, and robust systems. Every challenge is an opportunity to learn and grow.</p>
+                <p class="bio">I'm a backend-focused developer passionate about building scalable, efficient, and user-centered web solutions. I work with Python and frameworks like FastAPI to create clean, maintainable, and robust systems. Every challenge is an opportunity to learn and grow.</p>
                 <a href="contact.html" class="btn primary-btn">Contact Me</a>
             </div>
         </div>
@@ -53,17 +53,11 @@
             </div>
         </div>
     </section>
-    
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 MD WASI KHAN Portfolio. All Rights Reserved.</p>
-        </div>
-    </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
     const menuToggleBtn = document.getElementById('menu-toggle-btn');
-    const navMenu = document.getElementById('nav-menu');
+    
 
     if (menuToggleBtn && navMenu) {
         menuToggleBtn.addEventListener('click', () => {
@@ -72,13 +66,7 @@
         });
     }
 
-    const closeMenu = () => {
-        navMenu.classList.remove('active');
-        menuToggleBtn.classList.remove('active');
-    };
-    document.querySelectorAll('.nav-menu ul li a').forEach(link => {
-        link.addEventListener('click', closeMenu);
-    });
+ 
 
     const themeToggleBtn = document.getElementById('theme-toggle');
     const body = document.body;
@@ -122,5 +110,70 @@
     applyTheme(storedTheme === 'light' ? 'light' : 'dark');
 });
     </script>
+    <script src="script.js"></script>
 </body>
+
+<footer class="footer-minimal">
+    <div class="container">
+        <div class="footer-grid">
+
+            <!-- Quick Links (2 Columns) -->
+            <div class="footer-col quick-links">
+                <h5>Quick Links</h5>
+                <div class="links-grid">
+                    <ul>
+                        <li><a href="/home.html">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/projects.html">Projects</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/blogs.html">Blogs</a></li>
+                        <li><a href="/services.html">Services</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-col">
+                <h5>Get in Touch</h5>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</li>
+                    <li><i class="fas fa-envelope"></i> mdwasikhan54@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> +880 1888-387586</li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-col">
+                <h5>Stay Updated</h5>
+                <form>
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <!-- Social -->
+            <div class="footer-col">
+                <h5>Follow Me</h5>
+                <div class="social-links">
+                    <a href="https://github.com/mdwasikhan54" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/mdwasikhan54/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/wasi_khan86" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://facebook.com/mdwasikhan.fb" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="year"></span> All rights reserved.</p>
+            <p>Designed with <strong>MD WASI KHAN</strong> in <strong>Dhaka, Bangladesh</strong></p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </html>

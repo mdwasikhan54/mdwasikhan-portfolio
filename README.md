@@ -33,7 +33,7 @@ Follow these steps to run the project locally on your machine:
 
 1.  **Clone the Repository (If downloading the code):**
     ```bash
-    git clone [https://github.com/mdwasikhan54/mdwasikhan-portfolio.git](https://github.com/mdwasikhan54/mdwasikhan-portfolio.git)
+    git clone https://github.com/mdwasikhan54/mdwasikhan-portfolio.git
     ```
 
 2.  **Navigate to the Project Directory:**

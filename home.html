@@ -2,178 +2,417 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD WASI KHAN | Python Backend Developer</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="/Image/logo.png">
-    <title>MD Wasi Khan - Home</title>
+    <link rel="icon" type="image/x-icon" href="Image/logo.png">
 </head>
 <body>
+
+    <canvas id="canvas1"></canvas>
+
     <header>
-        <nav>
-            <div class="logo">
-                <a href="home.html">
-                    <img src="/Image/logo.png" alt="Demo Portfolio Logo" style="height: 40px; width: auto; vertical-align: middle;">
-                </a>
-            </div>
-            
-            <div class="nav-right">
-                <div class="nav-menu" id="nav-menu">
-                    <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="blogs.html">Blogs</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact Me</a></li>
-                    </ul>
+        <nav class="navbar container">
+            <a href="#home" class="nav-logo">
+                <div class="logo-image">
+                    <img src="Image/Formal_Photo.jpg" alt="Profile">
                 </div>
-                <a href="#" id="theme-toggle" class="theme-toggle-link" aria-label="Toggle theme"><i class="fas fa-moon"></i></a>
-                <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+                <div class="logo-info">
+                    <span class="logo-name">MD WASI KHAN</span>
+                    <span class="logo-title">Python Backend Developer</span>
+                </div>
+            </a>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#blogs" class="nav-link">Blogs</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
             </div>
+
+            <div class="nav-controls">
+    <button id="theme-toggle" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+    <button class="nav-toggle-btn" id="nav-toggle" aria-label="Menu">
+        <i class="fas fa-bars" id="menu-icon"></i>
+        <i class="fas fa-times" id="close-icon"></i>
+    </button>
+</div>
         </nav>
     </header>
 
-    <section id="home">
-        <div class="left">
-            <div class="content">
-                <h2>Hello, I'm</h2>
-                <h1>MD WASI KHAN</h1>
-                <p class="subtitle">Full Stack Developer & Designer</p>
-                <p class="bio">I'm a backend-focused developer passionate about building scalable, efficient, and user-centered web solutions. I work with Python and frameworks like FastAPI to create clean, maintainable, and robust systems. Every challenge is an opportunity to learn and grow.</p>
-                <a href="contact.html" class="btn primary-btn">Contact Me</a>
-            </div>
-        </div>
-        <div class="right">
-            <div class="image">
-                <img src="/Image/profile.jpg" alt="MD WASI KHAN Profile">
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="glass-container hero-wrapper">
+                <div class="hero-content">
+                    <div class="hero-text">
+    <h3 class="animate-text">Hello, I'm</h3>
+    <div class="typing-wrapper">
+        <h1 id="typing-name" class="typing-text">MD WASI KHAN</h1>
+        <span id="cursor" class="cursor">|</span>
+    </div>
+    <h2 class="static-subtitle">Python Backend Developer</h2>
+    
+    <p class="animate-text delay-1">I transform complex logic into clean, production-ready backend code. My expertise lies in Python with Linux ecosystem, delivering end-to-end solutions from high-speed FastAPI services to optimized, relational PostgreSQL database architecture.</p>
+    
+    <div class="hero-btns animate-text delay-2">
+        <a href="https://drive.google.com/file/d/1VFnDOQDqC3OxW2wtlAFOQ-SKamVfjIY5/view?usp=sharing" target="_blank" class="btn primary-btn"><i class="fas fa-download"></i> Get Resume</a>
+        <a href="#contact" class="btn outline-btn">Hire Me</a>
+        <a href="#projects" class="btn text-btn">View My Works <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <div class="social-icons animate-text delay-3">
+        <a href="https://github.com/mdwasikhan54" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/mdwasikhan54/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://facebook.com/mdwasikhan.fb" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://hackerrank.com/profile/wasi_khan" target="_blank"><i class="fab fa-hackerrank"></i></a>
+    </div>
+</div>
+                    
+                    <div class="hero-img animate-img">
+                        <div class="img-border">
+                            <img src="Image/Formal_Photo.jpg" alt="MD WASI KHAN">
+                        </div>
+                        <div class="floating-icon python">
+                            <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python" width="38" height="38">
+                        </div>
+                        <div class="floating-icon db">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="floating-icon linux">
+                            <img src="https://img.icons8.com/color/48/000000/linux.png" alt="Linux" width="38" height="38">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-    const menuToggleBtn = document.getElementById('menu-toggle-btn');
-    
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About <span>Me</span></h2>
+                <div class="header-bar"></div>
+            </div>
+            
+            <div class="glass-container">
+                <div class="about-bento-grid">
+                    <div class="about-left">
+                        <div class="bio-box">
+                            <h3><i class="fas fa-user-circle"></i> Who I Am</h3>
+                            <p class="about-desc">
+                                Dedicated <strong>Python Backend Developer</strong> with a knack for solving complex logical problems. I specialize in building secure RESTful APIs with FastAPI and designing robust PostgreSQL schemas.
+                                <br><br>
+                                Currently pursuing my Diploma in Engineering, I am committed to writing clean, maintainable code and eager to bring my problem-solving mindset to a collaborative engineering team.
+                            </p>
+                        </div>
 
-    if (menuToggleBtn && navMenu) {
-        menuToggleBtn.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            menuToggleBtn.classList.toggle('active');
-        });
-    }
+                        <div class="cert-box">
+                            <h3><i class="fas fa-medal"></i> Certifications</h3>
+                            <div class="cert-items">
+                                <a href="https://hackerrank.com/profile/wasi_khan" target="_blank" class="cert-badge gold-badge">
+                                    <i class="fas fa-award"></i> 5-Star Gold Badge (Python, C++, C)
+                                </a>
+                                <a href="https://www.hackerrank.com/certificates/c1123843b16b" target="_blank" class="cert-badge silver-badge">
+                                    <i class="fas fa-check-circle"></i> Python (Basic) Certificate
+                                </a>
+                                <a href="https://www.hackerrank.com/certificates/865abc9d16da" target="_blank" class="cert-badge bronze-badge">
+                                    <i class="fas fa-brain"></i> Problem Solving (Basic) Certificate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
- 
+                    <div class="about-right">
+                        <div class="edu-box">
+                            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                            <div class="edu-timeline">
+                                <div class="edu-card">
+                                    <span class="year">2022 - Present</span>
+                                    <h4>Diploma in Engineering (CST)</h4>
+                                    <small>Brahmanbaria Polytechnic Institute</small>
+                                </div>
+                                <div class="edu-card">
+                                    <span class="year">2019 - 2021</span>
+                                    <h4>Secondary School Certificate (SSC)</h4>
+                                    <small>Kalikaccha Pathshala High School</small>
+                                </div>
+                            </div>
+                        </div>
 
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    const body = document.body;
-    const toggleIcon = themeToggleBtn.querySelector('i');
+                        <div class="soft-skills-box">
+                            <h3><i class="fas fa-lightbulb"></i> Soft Skills</h3>
+                            <div class="skills-cloud">
+                                <span>Problem Solving</span>
+                                <span>Teamwork</span>
+                                <span>Adaptability</span>
+                                <span>Attention to Detail</span>
+                                <span>Communication</span>
+                                <span>Conflict Resolution</span>
+                                <span>Self-Motivation & Discipline</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    const lightThemeClass = 'light-mode';
-    const lightIcon = 'fa-sun';
-    const darkIcon = 'fa-moon';
-    const themeKey = 'theme';
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical <span>Skills</span></h2>
+                <p>My technical arsenal and tools I work with.</p>
+                <div class="header-bar"></div>
+            </div>
 
-    function applyTheme(theme) {
-        if (theme === 'light') {
-            body.classList.add(lightThemeClass);
-            toggleIcon.classList.remove(darkIcon);
-            toggleIcon.classList.add(lightIcon);
-            localStorage.setItem(themeKey, 'light');
-        } else {
-            body.classList.remove(lightThemeClass);
-            toggleIcon.classList.remove(lightIcon);
-            toggleIcon.classList.add(darkIcon);
-            localStorage.setItem(themeKey, 'dark');
-        }
-    }
+            <div class="glass-container">
+                <div class="skills-grid-layout">
+                    <div class="skill-group">
+                        <h3 class="cat-title">Programming Languages</h3>
+                        <div class="skill-cards">
+                            <div class="skill-card"><i class="devicon-c-plain colored"></i><span>C</span></div>
+                            <div class="skill-card"><i class="devicon-cplusplus-plain colored"></i><span>C++</span></div>
+                            <div class="skill-card"><img src="https://img.icons8.com/color/48/000000/python.png" alt="Python"><span>Python</span></div>
+                            <div class="skill-card"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                        </div>
+                    </div>
 
-    function toggleTheme() {
-        if (body.classList.contains(lightThemeClass)) {
-            applyTheme('dark');
-        } else {
-            applyTheme('light');
-        }
-    }
+                    <div class="skill-group">
+                        <h3 class="cat-title">Web & Frameworks</h3>
+                        <div class="skill-cards">
+                            <div class="skill-card"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
+                            <div class="skill-card"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
+                            <div class="skill-card"><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
+                            <div class="skill-card"><i class="devicon-tailwindcss-plain colored"></i><span>Tailwind CSS</span></div>
+                            <div class="skill-card"><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span></div>                            <div class="skill-card"><i class="fas fa-network-wired" style="color: #e34c26;"></i><span>RESTful API</span></div>
+                            <div class="skill-card"><i class="fas fa-shield-alt" style="color: #e74c3c;"></i><span>Pydantic</span></div>
+                            <div class="skill-card"><i class="fas fa-key" style="color: #f7df1e;"></i><span>JWT</span></div>
+                        </div>
+                    </div>
 
-    if (themeToggleBtn) {
-        themeToggleBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            toggleTheme();
-        });
-    }
+                    <div class="skill-group">
+                        <h3 class="cat-title">Databases & DevOps</h3>
+                        <div class="skill-cards">
+                            <div class="skill-card"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+                            <div class="skill-card"><img src="https://img.icons8.com/color/48/000000/linux.png" alt="Linux"><span>Linux</span></div>
+                            <div class="skill-card"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                            <div class="skill-card"><img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub"><span>GitHub</span></div>
+                            <div class="skill-card"><i class="devicon-gitlab-plain colored"></i><span>GitLab</span></div>
+                            <div class="skill-card"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+                        </div>
+                    </div>
 
-    const storedTheme = localStorage.getItem(themeKey);
-    applyTheme(storedTheme === 'light' ? 'light' : 'dark');
-});
-    </script>
+                    <div class="skill-group">
+                        <h3 class="cat-title">Testing & Editors</h3>
+                        <div class="skill-cards">
+                            <div class="skill-card"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" style="width:30px; margin-bottom:5px;"><span>Postman</span></div>
+                            <div class="skill-card"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
+                            <div class="skill-card"><i class="fas fa-box-open" style="color: #3776ab;"></i><span>Poetry</span></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 class="cat-title">Design & Productivity</h3>
+                        <div class="skill-cards">
+                            <div class="skill-card"><i class="devicon-photoshop-plain colored"></i><span>Photoshop</span></div>
+                            <div class="skill-card"><i class="devicon-illustrator-plain colored"></i><span>Illustrator</span></div>
+                            <div class="skill-card"><img src="https://img.icons8.com/color/48/000000/canva.png" alt="Canva"><span>Canva</span></div>
+                            <div class="skill-card"><i class="fas fa-video" style="color: #ff0050;"></i><span>CapCut</span></div>
+                            <div class="skill-card"><img src="https://img.icons8.com/color/48/000000/microsoft-word-2019.png" alt="MS Word"><span>MS Word</span></div>
+                            <div class="skill-card"><img src="https://img.icons8.com/color/48/000000/microsoft-excel-2019.png" alt="MS Excel"><span>MS Excel</span></div>
+                            <div class="skill-card"><img src="https://img.icons8.com/color/48/000000/microsoft-powerpoint-2019.png" alt="MS PowerPoint"><span>MS PowerPoint</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured <span>Projects</span></h2>
+                <div class="header-bar"></div>
+            </div>
+
+            <div class="glass-container">
+                <div class="projects-grid">
+                    <div class="project-item">
+                        <div class="project-content">
+                            <div class="folder-icon"><i class="fas fa-server"></i></div>
+                            <h3>Student Management API</h3>
+                            <ul class="project-desc">
+                                <li>Developed a robust RESTful API handling secure User Registration and Login functionalities.</li>
+                                <li>Implemented Pydantic for strict data validation and JWT Authentication for secure access control.</li>
+                                <li>Created custom JSON-based persistence layer to handle CRUD operations.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span>Python</span><span>FastAPI</span><span>JWT</span><span>Pydantic</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/mdwasikhan54" target="_blank" class="read-btn project-read-btn">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project-content">
+                            <div class="folder-icon"><i class="fas fa-database"></i></div>
+                            <h3>Relational DB Schema Design</h3>
+                            <ul class="project-desc">
+                                <li>Architected a normalized Relational Database Schema for a student management system.</li>
+                                <li>Designed Entity-Relationship Diagrams (ERD) to visualize complex relationships.</li>
+                                <li>Wrote optimized SQL scripts for creating tables, constraints, and joins.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span>PostgreSQL</span><span>ERD</span><span>SQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/mdwasikhan54" target="_blank" class="read-btn project-read-btn">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project-content">
+                            <div class="folder-icon"><i class="fas fa-clinic-medical"></i></div>
+                            <h3>Clinic Management System</h3>
+                            <ul class="project-desc">
+                                <li>Full-featured clinic management application with patient registration and appointment scheduling.</li>
+                                <li>Secure admin and doctor dashboards with role-based access control.</li>
+                                <li>Real-time appointment tracking and patient history management.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span>Python</span><span>CLI</span><span>File Based Storage</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/mdwasikhan54" target="_blank" class="read-btn project-read-btn">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blogs" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>My <span>Blogs</span></h2>
+                <div class="header-bar"></div>
+            </div>
+            
+            <div class="glass-container">
+                <div class="blog-container">
+                    <div class="blog-box">
+                        <div class="blog-img">
+                            <img src="Image/blog1.jpeg" alt="Hardware">
+                        </div>
+                        <div class="blog-text">
+                            <h3>How Powerful Is Your PC?</h3>
+                            <p>Many professionals experience slow systems, laggy performance, or unresponsive applications — but the root cause often remains unclear. Is the processor too weak? Is the RAM bottlenecking performance? Or is it time for a hardware upgrade?</p>
+                            <a href="https://docs.google.com/document/d/1RN9U966PODLWSQfq7BPiXqP4rLBhWVmWMrRSGSoQmgE/edit?usp=sharing" target="_blank" class="read-btn">Read More →</a>
+                        </div>
+                    </div>
+                    <div class="blog-box">
+                        <div class="blog-img">
+                            <img src="Image/blog2.jpeg" alt="Python">
+                        </div>
+                        <div class="blog-text">
+                            <h3>Poetry in Python</h3>
+                            <p>এই ব্লগে Poetry এর বিভিন্ন দিক বিস্তারিতভাবে আলোচনা করা হয়েছে: এটি কী, কেন এবং কখন ব্যবহার করা উচিত, এবং এর ব্যবহারিক প্রয়োগের ধাপগুলো। এই গাইড পড়ে পাঠকরা Poetry এর সুবিধা ও কার্যকারিতা সম্পর্কে গভীরভাবে ধারণা অর্জন করতে পারবেন এবং তাদের প্রজেক্টগুলোকে আরও দক্ষতার সাথে পরিচালনা করতে সক্ষম হবেন।</p>
+                            <a href="https://docs.google.com/document/d/1z48hmRhUMNA_mXKni-M506b6s2rMSHc8C32yq7_-FfI/edit?usp=sharing" target="_blank" class="read-btn">Read More →</a>
+                        </div>
+                    </div>
+                    <div class="blog-box">
+                        <div class="blog-img">
+                            <img src="Image/blog3.jpeg" alt="Security">
+                        </div>
+                        <div class="blog-text">
+                            <h3>Are Your Messages Truly Safe?</h3>
+                            <p>🛡️ WhatsApp is Encrypted — But Are Your Messages Truly Safe? —Pegasus, the CIA, and your smartphone’s real vulnerability! We trust WhatsApp because it promises end-to-end encryption. But if your device is compromised, encryption alone won’t save you.</p>
+                            <a href="https://docs.google.com/document/d/1BFvFjxRfButBgYXoAUHhaCMJB20MZyLnaQsxbp-IkZI/edit?usp=sharing" target="_blank" class="read-btn">Read More →</a>
+                        </div>
+                    </div>
+                    <div class="blog-box">
+                        <div class="blog-img">
+                            <img src="/Image/blog4.png" alt="JS vs Python">
+                        </div>
+                        <div class="blog-text">
+                            <h3>জাভাস্ক্রিপ্ট OOP — মিথ নাকি বাস্তব?</h3>
+                            <p>অবজেক্ট-ওরিয়েন্টেড প্রোগ্রামিং (OOP) শুধু কোডের গঠন নয়—এটা চিন্তার ধরন। কিন্তু প্রশ্ন হলো, JavaScript কি সত্যিই সেই দর্শন অনুসরণ করে, নাকি শুধু প্রোটোটাইপের মোড়কে OOP-এর ছদ্মরূপ দেখায়?</p>
+                            <a href="https://docs.google.com/document/d/1QIFEQSQBh01KF2dctkjU7ngCfVaIjHiHrhnJuqhj5BM/edit?usp=sharing" target="_blank" class="read-btn">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Let's <span>Connect</span></h2>
+                <div class="header-bar"></div>
+            </div>
+
+            <div class="glass-container contact-wrapper">
+                <div class="contact-header">
+                    <h3>Get In Touch</h3>
+                    <p>The best way to reach me is directly through email or WhatsApp.</p>
+                </div>
+                
+                <div class="direct-contact-row">
+                    <a href="mailto:mdwasikhan54@gmail.com" class="contact-card-glass email">
+                        <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                        <div class="info">
+                            <h4>Email Me</h4>
+                            <span>mdwasikhan54@gmail.com</span>
+                        </div>
+                        <i class="fas fa-arrow-right arrow"></i>
+                    </a>
+                    <a href="https://wa.me/8801888387586" target="_blank" class="contact-card-glass whatsapp">
+                        <div class="icon-box"><i class="fab fa-whatsapp"></i></div>
+                        <div class="info">
+                            <h4>WhatsApp Me</h4>
+                            <span>+880 1888-387586</span>
+                        </div>
+                        <i class="fas fa-arrow-right arrow"></i>
+                    </a>
+                </div>
+
+                <div class="social-connect">
+                    <h4>Connect on Social Media</h4>
+                    <div class="social-row">
+                        <a href="https://linkedin.com/in/mdwasikhan54/" target="_blank" class="s-btn"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                        <a href="https://github.com/mdwasikhan54" target="_blank" class="s-btn"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://facebook.com/mdwasikhan.fb" target="_blank" class="s-btn"><i class="fab fa-facebook-f"></i> Facebook</a>
+                        <a href="https://x.com/wasi_khan86" target="_blank" class="s-btn"><i class="fab fa-twitter"></i> X</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="glass-footer">
+        <p>© <span id="year"></span> MD WASI KHAN. All Rights Reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
-
-<footer class="footer-minimal">
-    <div class="container">
-        <div class="footer-grid">
-
-            <!-- Quick Links (2 Columns) -->
-            <div class="footer-col quick-links">
-                <h5>Quick Links</h5>
-                <div class="links-grid">
-                    <ul>
-                        <li><a href="/home.html">Home</a></li>
-                        <li><a href="/about.html">About</a></li>
-                        <li><a href="/projects.html">Projects</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="/blogs.html">Blogs</a></li>
-                        <li><a href="/services.html">Services</a></li>
-                        <li><a href="/contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Contact -->
-            <div class="footer-col">
-                <h5>Get in Touch</h5>
-                <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</li>
-                    <li><i class="fas fa-envelope"></i> mdwasikhan54@gmail.com</li>
-                    <li><i class="fas fa-phone"></i> +880 1888-387586</li>
-                </ul>
-            </div>
-
-            <!-- Newsletter -->
-            <div class="footer-col">
-                <h5>Stay Updated</h5>
-                <form>
-                    <input type="email" placeholder="Your Email" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
-
-            <!-- Social -->
-            <div class="footer-col">
-                <h5>Follow Me</h5>
-                <div class="social-links">
-                    <a href="https://github.com/mdwasikhan54" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/mdwasikhan54/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://x.com/wasi_khan86" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://facebook.com/mdwasikhan.fb" target="_blank"><i class="fab fa-facebook"></i></a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
-            <p>© <span id="year"></span> All rights reserved.</p>
-            <p>Designed with <strong>MD WASI KHAN</strong> in <strong>Dhaka, Bangladesh</strong></p>
-        </div>
-    </div>
-</footer>
-
-<script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-</script>
 </html>

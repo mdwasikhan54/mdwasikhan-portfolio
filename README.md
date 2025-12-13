@@ -6,6 +6,8 @@ This repository contains the complete source code for my modern, single-page per
 
 The design emphasizes a premium, modern aesthetic with glassmorphism effects, interactive animations, and flawless responsiveness across all devices.
 
+---
+
 ## ✨ Key Features
 
 - **Custom Interactive Particle Background** — Canvas-based moving particles with dynamic connecting lines (pure JS, no external libraries)
@@ -25,15 +27,7 @@ The design emphasizes a premium, modern aesthetic with glassmorphism effects, in
 - **Fonts** — Poppins, Montserrat, Fira Code (Google Fonts)
 - **Icons** — Font Awesome 6 & Devicon
 
-
-## 📂 Project Structure
-.
-├── home.html          # Single-page HTML file
-├── style.css          # All styles with CSS variables for theming
-├── script.js          # All interactive logic (typing, particles, theme, menu, etc.)
-├── Image/             # Profile photos, blog thumbnails, icons, and screenshots
-└── README.md          # This file
-text## 📸 Screenshots
+---
 
 ### Dark Mode (Default)
 
@@ -47,7 +41,16 @@ text## 📸 Screenshots
 
 ![Skills Section - Light Mode](Image/screenshot-light-skills.jpg)
 
-*(Add your own screenshots to the `Image/` folder and update the file names above if needed)*
+---
+
+## 📂 Project Structure
+.
+├── home.html          # Single-page HTML file
+├── style.css          # All styles with CSS variables for theming
+├── script.js          # All interactive logic (typing, particles, theme, menu, etc.)
+├── Image/             # Profile photos, blog thumbnails, icons, and screenshots
+└── README.md          # This file
+text## 📸 Screenshots
 
 ## 🏗️ Local Setup
 

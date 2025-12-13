@@ -1,58 +1,63 @@
-# 🔥 MD Wasi Khan - Personal Portfolio Website
+# 💎 MD Wasi Khan - Portfolio Showcase
 
-This repository hosts the complete source code for my personal portfolio website, named `mdwasikhan-portfolio`. This website is designed to professionally showcase my projects, skills, and experience as a **Python Backend Enthusiast**.
+This repository contains the complete, production-ready source code for my professional portfolio. It serves as a single-page interactive demonstration of my development focus, combining a clean, modern UI with a strong emphasis on showcasing scalable backend architecture.
 
-The site prioritises clean design, performance, and cross-device responsiveness.
+## ✨ Front-End Engineering & Design Architecture
 
-## ✨ Key Features
+The front-end is engineered for a premium, performant user experience without heavy frameworks.
 
-* **Fully Responsive Design:** Optimised for seamless viewing across all screen sizes (desktops, tablets, and mobile phones).
-* **Dynamic Theme Toggle:** Includes a built-in function to switch between the **Dark Mode** (default) and a **Light Mode**.
-* **Comprehensive Page Structure:** Contains all essential portfolio pages:
-    * Home (`home.html`)
-    * About Me (`about.html`)
-    * Projects (`projects.html`)
-    * Services (`services.html`)
-    * Blogs (`blogs.html`)
-    * Contact Me (`contact.html`)
-* **Clean Codebase:** Utilises CSS variables for easy theming and robust maintenance.
+* **Aesthetic:** **Glassmorphism 2.0:** A subtle, high-fidelity design language utilizing CSS `backdrop-filter` for a sleek, translucent container look that works flawlessly across both themes.
+* **Theming:** **Dual-Mode System:** Custom-built system allowing users to instantly switch between the sophisticated **Dark Mode (Default)** and the bright, professional **Light Mode** using CSS Variables for minimal redraw.
+* **Immersive UX:**
+    * **Animated Particles:** A custom-coded Vanilla JS background particle system creates a subtle, dynamic atmosphere without taxing resources.
+    * **Typing Animation:** Smooth, letter-by-letter introduction of the name with a permanent, blinking cursor for a polished Hero Section.
+    * **Architecture:** Fully responsive, single-page application (SPA) style flow (`home.html`) for fast navigation across all core sections: Home, About, Skills, Projects, Blogs, and Contact.
+* **Code Quality:** Clean, modular CSS (utilizing Flexbox, Grid, and CSS Variables) and lightweight Vanilla JavaScript ensures excellent load times and maintainability.
 
-## 🛠️ Tech Stack
+## 💻 Backend Skills Showcased
 
-This project is built using fundamental web technologies for a fast and lightweight front-end:
+While the repository's code is focused on the front-end presentation, the content is specifically structured to highlight my expertise in:
 
-* **HTML5:** For semantic structure.
-* **CSS3:** For styling, including Flexbox, Grid, and CSS Variables.
-* **Vanilla JavaScript:** For interactive elements (mobile menu and theme toggle).
-* **Fonts:** Montserrat & Open Sans.
-* **Icons:** Font Awesome.
+* **API Development:** Featured projects focus on **FastAPI** for high-speed service development and **RESTful API** design.
+* **Data Integrity:** Demonstrating security practices through **JWT Authentication** and data validation with **Pydantic**.
+* **Ecosystem:** Showcasing proficiency in **PostgreSQL**, **Linux**, and modern Python dependency management with **Poetry**.
 
-## ⚙️ Local Setup and Installation
+## 🛠️ Technology Stack
+
+| Category | Key Technologies |
+| :--- | :--- |
+| **Foundation** | HTML5 (Semantic), CSS3 (Modern features), Vanilla JavaScript |
+| **Styling & Icons** | CSS Variables, Flexbox, Grid, Font Awesome, Devicon |
+
+## ⚙️ Local Setup and Execution
 
 Follow these steps to run the project locally on your machine:
 
-1.  **Clone the Repository (If downloading the code):**
+1.  **Clone the Repository:**
     ```bash
     git clone https://github.com/mdwasikhan54/mdwasikhan-portfolio.git
     ```
 
 2.  **Navigate to the Project Directory:**
-    If your local folder name is `MWK-Portfolio`, use this command to enter it:
     ```bash
-    cd MWK-Portfolio
+    cd mdwasikhan-portfolio
     ```
 
-3.  **Open in Browser:**
-    Open the **`home.html`** file directly in your preferred web browser to view the website.
+3.  **Launch:**
+    Open the **`home.html`** file directly in your web browser.
 
-## 🔗 Live Demo
+## 🔗 Live Deployment
 
-The deployed version of the portfolio can be viewed here:
+The latest deployed version of the portfolio is available here:
 
 [https://mdwasikhan-portfolio.netlify.app/](https://mdwasikhan-portfolio.netlify.app/)
 
 ---
 
-## 🤝 Contribution & License
+### 👨‍💻 Developed by [MD WASI KHAN](https://mdwasikhan-portfolio.netlify.app/) 
 
-This is a personal project. Feel free to use the code as inspiration for your own portfolio (credit is appreciated!).
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mdwasikhan54)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/mdwasikhan54)
+</div>
+
+If you find this project helpful, please drop a ⭐ star on the repo\!

@@ -159,4 +159,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // --- 6. Skills Carousel Disabled ---
+    // Keeping skills as a static grid for better readability and mobile stability.
 });
